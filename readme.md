@@ -18,6 +18,6 @@ Commoncollections:
 
 修改以下设置即可:
 
-![image-20230626175336184](C:\Users\y3ff18\AppData\Roaming\Typora\typora-user-images\image-20230626175336184.png)
+![](https://github.com/v1f18/SerializerChain/blob/main/img/631355-20190429141045413-173558177.png)
 
 把这两个选项关掉
