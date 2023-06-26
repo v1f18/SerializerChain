@@ -2,4 +2,14 @@
 
 Commoncollections:
 
-从cc1到cc6
+- cc1:TransformedMap
+
+- cc2:LazyMap
+
+- cc3:TrAXFilter
+
+- cc4:PriorityQueue
+
+- cc5:TemplatesImpl
+
+- cc6HashMap
