@@ -13,3 +13,11 @@ Commoncollections:
 - cc5:TemplatesImpl
 
 - cc6HashMap
+
+大家在测试debug的时候,有时候idea的调试器会造成干扰,比如调试cc6的时候,lazyMap的get方法会被调试器提前执行,导致map中有缓存,后面调试到get方法的时候就不会进入到漏洞触发点了
+
+修改以下设置即可:
+
+![img](https://img2018.cnblogs.com/blog/631355/201904/631355-20190429141045413-173558177.png)
+
+把这两个选项关掉
