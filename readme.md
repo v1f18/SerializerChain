@@ -18,6 +18,6 @@ Commoncollections:
 
 修改以下设置即可:
 
-![img](https://img2018.cnblogs.com/blog/631355/201904/631355-20190429141045413-173558177.png)
+![image-20230626175336184](C:\Users\y3ff18\AppData\Roaming\Typora\typora-user-images\image-20230626175336184.png)
 
 把这两个选项关掉
